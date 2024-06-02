@@ -1,0 +1,12 @@
+<?php
+require_once("includes/SessionAdmin.php")
+?>
+<?php
+require_once("includes/Functions.php")
+?>
+<?php
+$_SESSION["UserId"]=null;
+$_SESSION["email"]=null;
+session_destroy();
+Redirect_to("login.php");
+?>
